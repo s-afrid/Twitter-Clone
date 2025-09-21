@@ -9,6 +9,7 @@
       "Courier New", monospace;
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
@@ -178,8 +179,68 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .relative {
     position: relative;
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .left-1 {
+    left: calc(var(--spacing) * 1);
+  }
+  .left-1\/2 {
+    left: calc(1/2 * 100%);
+  }
+  .left-3 {
+    left: calc(var(--spacing) * 3);
+  }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
+  }
+  .left-5 {
+    left: calc(var(--spacing) * 5);
+  }
+  .left-8 {
+    left: calc(var(--spacing) * 8);
+  }
+  .left-10 {
+    left: calc(var(--spacing) * 10);
+  }
+  .left-\[\%\] {
+    left: %;
+  }
+  .left-\[0\%\] {
+    left: 0%;
+  }
+  .left-\[6\%\] {
+    left: 6%;
+  }
+  .left-\[20\%\] {
+    left: 20%;
+  }
+  .left-\[20\] {
+    left: 20;
+  }
+  .left-\[40\%\] {
+    left: 40%;
+  }
+  .left-\[60\%\] {
+    left: 60%;
+  }
+  .left-\[63\%\] {
+    left: 63%;
+  }
+  .left-\[65\%\] {
+    left: 65%;
+  }
+  .left-\[70\%\] {
+    left: 70%;
+  }
+  .z-10 {
+    z-index: 10;
   }
   .container {
     width: 100%;
@@ -244,6 +305,18 @@
   .table {
     display: table;
   }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
+  .h-\[1px\] {
+    height: 1px;
+  }
+  .h-fit {
+    height: fit-content;
+  }
+  .h-full {
+    height: 100%;
+  }
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
@@ -252,6 +325,9 @@
   }
   .w-8 {
     width: calc(var(--spacing) * 8);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
   }
   .w-fit {
     width: fit-content;
@@ -314,6 +390,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-x-gray-700 {
+    border-inline-color: var(--color-gray-700);
+  }
   .border-x-white {
     border-inline-color: var(--color-white);
   }
@@ -325,6 +404,15 @@
   }
   .bg-black {
     background-color: var(--color-black);
+  }
+  .bg-blue-500 {
+    background-color: var(--color-blue-500);
+  }
+  .bg-blue-700 {
+    background-color: var(--color-blue-700);
+  }
+  .bg-gray-700 {
+    background-color: var(--color-gray-700);
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
