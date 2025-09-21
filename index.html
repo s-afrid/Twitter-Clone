@@ -11,14 +11,14 @@
 </head>
 
 <body class=" bg-black text-white">
-  <div class="flex container mx-auto my-4">
-    <div class="first w-full flex flex-col items-end">
-      <div class="sidebar flex">
-        <ul class="flex flex-col text-xl font-bold space-y-2 w-full">
+  <div class="flex xl:container mx-auto my-4">
+    <div class="first xl:w-full flex flex-col items-end">
+      <div class="sidebar flex sticky top-0">
+        <ul class="flex flex-col text-xl font-bold space-y-2 w-full xl:p-2">
           <li>
-            <div class="logo invert my-4">
+            <div class="logo invert my-4 mx-3">
               <svg viewBox="0 0 24 24" aria-hidden="true"
-                class="w-8 mx-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
                 <g>
                   <path
                     d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
@@ -31,54 +31,61 @@
           <li
             class="flex justify-start items-center gap-3 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-4xl hover:cursor-pointer">
             <span class="text-3xl material-symbols-outlined"> home </span>
-            Home</li>
+            <span class="hidden xl:block">Home</span></li>
           <li
             class="flex justify-start items-center gap-3 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-4xl hover:cursor-pointer">
             <span class="text-3xl material-symbols-outlined"> search </span>
-            Explore</li>
+            <span class="hidden xl:block">Explore</span></li>
           <li
             class="flex justify-start items-center gap-3 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-4xl hover:cursor-pointer">
             <span class="text-3xl material-symbols-outlined"> notifications </span>
-            Notifications</li>
+            <span class="hidden xl:block">Notifications</span></li>
           <li
             class="flex justify-start items-center gap-3 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-4xl hover:cursor-pointer">
             <span class="text-3xl material-symbols-outlined"> chat </span>
-            Grok</li>
+            <span class="hidden xl:block">Grok</span></li>
           <li
             class="flex justify-start items-center gap-3 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-4xl hover:cursor-pointer">
             <span class="text-3xl material-symbols-outlined"> format_list_bulleted </span>
-            Lists</li>
+            <span class="hidden xl:block">Lists</span></li>
           <li
             class="flex justify-start items-center gap-3 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-4xl hover:cursor-pointer">
             <span class="text-3xl material-symbols-outlined"> bookmarks </span>
-            Bookmarks</li>
+            <span class="hidden xl:block">Bookmarks</span></li>
           <li
             class="flex justify-start items-center gap-3 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-4xl hover:cursor-pointer">
             <span class="text-3xl material-symbols-outlined"> communities </span>
-            Communities</li>
+            <span class="hidden xl:block">Communities</span></li>
           <li
             class="flex justify-start items-center gap-3 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-4xl hover:cursor-pointer">
             <span class="text-3xl material-symbols-outlined"> card_membership </span>
-            Premium</li>
+            <span class="hidden xl:block">Premium</span></li>
           <li
             class="flex justify-start items-center gap-3 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-4xl hover:cursor-pointer">
             <span class="text-3xl material-symbols-outlined"> person </span>
-            Profile</li>
+            <span class="hidden xl:block">Profile</span></li>
           <li
             class="flex justify-start items-center gap-3 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-4xl hover:cursor-pointer">
             <span class="text-3xl material-symbols-outlined"> more </span>
-            More</li>
+            <span class="hidden xl:block">More</span></li>
 
           <li>
-            <div class="button my-4 self-center mx-5">
-              <button class="cursor-pointer w-full text-sm bg-white text-black px-10 py-2 rounded-full">Post</button>
+            <div class="button my-2 xl:my-4 self-center mx-2 xl:mx-5">
+              <button class="cursor-pointer w-full text-sm bg-white text-black px-3 py-3 xl:px-10 xl:py-2 rounded-full">
+                <span class="hidden xl:block">Post</span>
+                <span class="block xl:hidden">
+
+                  <svg viewBox="0 0 24 24" aria-hidden="true" class="w-5  r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1472mwg r-lrsllp" style="color: rgb(15, 20, 25);"><g><path d="M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z"></path></g></svg>
+
+                </span>
+              </button>
             </div>
           </li>
         </ul>
       </div>
 
     </div>
-    <div class="second border-[1px] border-x-gray-700 border-y-black w-full">
+    <div class="second border-[1px] border-x-gray-700 border-y-black w-full xl:w-full">
       <div class="top flex justify-center z-10 relative">
         <div class="absolute w-8 rounded-full h-1 bg-blue-500 bottom-0 left-[20%]"></div>
         <div class="left py-3 w-1/2 text-center font-bold text-md hover:bg-gray-900 cursor-pointer">
@@ -178,11 +185,71 @@
 
          <div class="w-full h-[1px] bg-gray-700"></div>
         </div>
+        <div class="post">
+          <div class="header flex m-3 gap-2 flex-row">
+            <div class="image">
+              <img class="w-16 rounded-full"
+                src="https://pbs.twimg.com/profile_images/1923456890786414593/7GNiT2Hn_normal.jpg">
+            </div>
+
+            <div class="content">
+              <span class="font-bold cursor-pointer hover:underline">Sam</span>
+              <span class="text-gray-500">@samirande_ · 1h</span>
+              <div>
+                Wo sab to thik hai but why the thumbnail is kinda...
+              </div>
+              <div class="posting my-2">
+                <img class="rounded-xl border border-gray-700"
+                  src="https://pbs.twimg.com/media/G1WpsL8XQAAVjKm?format=jpg&name=small" alt="">
+              </div>
+
+              <div class="icons flex h-2 m-3 justify-between text-gray-500">
+            <div class="comments text-sm flex gap-1 items-center">
+              <span class="!text-[17px] material-symbols-outlined">
+                chat_bubble
+              </span>
+              15
+            </div>
+            <div class="retweets text-sm flex gap-1 items-center">
+              <span class="!text-[17px] material-symbols-outlined">
+                repeat
+              </span>
+            </div>
+            <div class="likes text-sm flex gap-1 items-center">
+              <span class="!text-[17px] material-symbols-outlined">
+                favorite
+              </span>
+              52
+            </div>
+            <div class="views text-sm flex gap-1 items-center">
+              <span class="!text-[17px] material-symbols-outlined">
+                bar_chart_4_bars
+              </span>
+              1.4k
+            </div>
+
+            <div class="bookmark_share text-sm flex gap-1 items-center">
+              <span class="!text-[17px] material-symbols-outlined">
+                bookmark
+              </span>
+              <span class="!text-[17px] material-symbols-outlined">
+                ios_share
+              </span>
+            </div>
+
+          </div>
+            </div>
+          </div>
+
+         <div class="w-full h-[1px] bg-gray-700"></div>
+        </div>
+
       </div>
 
     </div>
 
-    <div class="third w-full">
+    <div class="third hidden w-[45%] xl:w-full md:block">
+      <div class="sticky top-0">
       <div class="search m-3">
         <input type="text" class="w-2/3 rounded-full bg-[#16181c] text-white py-2 px-4" placeholder="Search">
       </div>
@@ -219,6 +286,7 @@
 
         <div class="text-blue-500 font-bold text-sm px-4 p-3 cursor-pointer">Show More</div>
       </div>
+    </div>
     </div>
   </div>
   </div>
