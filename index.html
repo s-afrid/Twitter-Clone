@@ -13,7 +13,7 @@
 <body class=" bg-black text-white">
   <div class="flex xl:container mx-auto my-4">
     <div class="first xl:w-full flex flex-col items-end">
-      <div class="sidebar flex sticky top-0">
+      <div class="sidebar flex sticky top-0 h-[100vh] overflow-auto no-scrollbar">
         <ul class="flex flex-col text-xl font-bold space-y-2 w-full xl:p-2">
           <li>
             <div class="logo invert my-4 mx-3">
@@ -145,36 +145,36 @@
                   src="https://pbs.twimg.com/media/G1WpsL8XQAAVjKm?format=jpg&name=small" alt="">
               </div>
 
-              <div class="icons flex h-2 m-3 justify-between text-gray-500">
-            <div class="comments text-sm flex gap-1 items-center">
-              <span class="!text-[17px] material-symbols-outlined">
+              <div class="icons flex h-2 mb-3 justify-between text-gray-500">
+            <div class="comments text-sm flex gap-1 items-center hover:text-blue-500 hover:bg-[#0e0922] rounded-full p-3">
+              <span class="!text-[15px] material-symbols-outlined">
                 chat_bubble
               </span>
               15
             </div>
-            <div class="retweets text-sm flex gap-1 items-center">
+            <div class="retweets text-sm flex gap-1 items-center p-3 hover:text-green-500 hover:bg-[#092213] rounded-full">
               <span class="!text-[17px] material-symbols-outlined">
                 repeat
               </span>
             </div>
-            <div class="likes text-sm flex gap-1 items-center">
+            <div class="likes text-sm flex gap-1 items-center p-3 hover:text-red-500 hover:bg-[#22090b] rounded-full">
               <span class="!text-[17px] material-symbols-outlined">
                 favorite
               </span>
               52
             </div>
-            <div class="views text-sm flex gap-1 items-center">
+            <div class="views text-sm flex gap-1 items-center p-3 hover:text-blue-500 hover:bg-[#0e0922] rounded-full ">
               <span class="!text-[17px] material-symbols-outlined">
                 bar_chart_4_bars
               </span>
               1.4k
             </div>
 
-            <div class="bookmark_share text-sm flex gap-1 items-center">
-              <span class="!text-[17px] material-symbols-outlined">
+            <div class="bookmark_share text-sm flex gap-1 items-center p-3">
+              <span class="!text-[17px] material-symbols-outlined p-2 hover:text-blue-500 hover:bg-[#0e0922] rounded-full">
                 bookmark
               </span>
-              <span class="!text-[17px] material-symbols-outlined">
+              <span class="!text-[17px] material-symbols-outlined p-2 hover:text-blue-500 hover:bg-[#0e0922] rounded-full">
                 ios_share
               </span>
             </div>
@@ -185,7 +185,8 @@
 
          <div class="w-full h-[1px] bg-gray-700"></div>
         </div>
-        <div class="post">
+        
+   <div class="post">
           <div class="header flex m-3 gap-2 flex-row">
             <div class="image">
               <img class="w-16 rounded-full"
@@ -203,36 +204,36 @@
                   src="https://pbs.twimg.com/media/G1WpsL8XQAAVjKm?format=jpg&name=small" alt="">
               </div>
 
-              <div class="icons flex h-2 m-3 justify-between text-gray-500">
-            <div class="comments text-sm flex gap-1 items-center">
-              <span class="!text-[17px] material-symbols-outlined">
+              <div class="icons flex h-2 mb-3 justify-between text-gray-500">
+            <div class="comments text-sm flex gap-1 items-center hover:text-blue-500 hover:bg-[#0e0922] rounded-full p-3">
+              <span class="!text-[15px] material-symbols-outlined">
                 chat_bubble
               </span>
               15
             </div>
-            <div class="retweets text-sm flex gap-1 items-center">
+            <div class="retweets text-sm flex gap-1 items-center p-3 hover:text-green-500 hover:bg-[#092213] rounded-full">
               <span class="!text-[17px] material-symbols-outlined">
                 repeat
               </span>
             </div>
-            <div class="likes text-sm flex gap-1 items-center">
+            <div class="likes text-sm flex gap-1 items-center p-3 hover:text-red-500 hover:bg-[#22090b] rounded-full">
               <span class="!text-[17px] material-symbols-outlined">
                 favorite
               </span>
               52
             </div>
-            <div class="views text-sm flex gap-1 items-center">
+            <div class="views text-sm flex gap-1 items-center p-3 hover:text-blue-500 hover:bg-[#0e0922] rounded-full ">
               <span class="!text-[17px] material-symbols-outlined">
                 bar_chart_4_bars
               </span>
               1.4k
             </div>
 
-            <div class="bookmark_share text-sm flex gap-1 items-center">
-              <span class="!text-[17px] material-symbols-outlined">
+            <div class="bookmark_share text-sm flex gap-1 items-center p-3">
+              <span class="!text-[17px] material-symbols-outlined p-2 hover:text-blue-500 hover:bg-[#0e0922] rounded-full">
                 bookmark
               </span>
-              <span class="!text-[17px] material-symbols-outlined">
+              <span class="!text-[17px] material-symbols-outlined p-2 hover:text-blue-500 hover:bg-[#0e0922] rounded-full">
                 ios_share
               </span>
             </div>
@@ -244,13 +245,71 @@
          <div class="w-full h-[1px] bg-gray-700"></div>
         </div>
 
+           <div class="post">
+          <div class="header flex m-3 gap-2 flex-row">
+            <div class="image">
+              <img class="w-16 rounded-full"
+                src="https://pbs.twimg.com/profile_images/1923456890786414593/7GNiT2Hn_normal.jpg">
+            </div>
+
+            <div class="content">
+              <span class="font-bold cursor-pointer hover:underline">Sam</span>
+              <span class="text-gray-500">@samirande_ · 1h</span>
+              <div>
+                Wo sab to thik hai but why the thumbnail is kinda...
+              </div>
+              <div class="posting my-2">
+                <img class="rounded-xl border border-gray-700"
+                  src="https://pbs.twimg.com/media/G1WpsL8XQAAVjKm?format=jpg&name=small" alt="">
+              </div>
+
+              <div class="icons flex h-2 mb-3 justify-between text-gray-500">
+            <div class="comments text-sm flex gap-1 items-center hover:text-blue-500 hover:bg-[#0e0922] rounded-full p-3">
+              <span class="!text-[15px] material-symbols-outlined">
+                chat_bubble
+              </span>
+              15
+            </div>
+            <div class="retweets text-sm flex gap-1 items-center p-3 hover:text-green-500 hover:bg-[#092213] rounded-full">
+              <span class="!text-[17px] material-symbols-outlined">
+                repeat
+              </span>
+            </div>
+            <div class="likes text-sm flex gap-1 items-center p-3 hover:text-red-500 hover:bg-[#22090b] rounded-full">
+              <span class="!text-[17px] material-symbols-outlined">
+                favorite
+              </span>
+              52
+            </div>
+            <div class="views text-sm flex gap-1 items-center p-3 hover:text-blue-500 hover:bg-[#0e0922] rounded-full ">
+              <span class="!text-[17px] material-symbols-outlined">
+                bar_chart_4_bars
+              </span>
+              1.4k
+            </div>
+
+            <div class="bookmark_share text-sm flex gap-1 items-center p-3">
+              <span class="!text-[17px] material-symbols-outlined p-2 hover:text-blue-500 hover:bg-[#0e0922] rounded-full">
+                bookmark
+              </span>
+              <span class="!text-[17px] material-symbols-outlined p-2 hover:text-blue-500 hover:bg-[#0e0922] rounded-full">
+                ios_share
+              </span>
+            </div>
+
+          </div>
+            </div>
+          </div>
+
+         <div class="w-full h-[1px] bg-gray-700"></div>
+        </div>
       </div>
 
     </div>
 
-    <div class="third hidden w-[45%] xl:w-full md:block">
-      <div class="sticky top-0">
-      <div class="search m-3">
+    <div class="third hidden w-full xl:w-full md:block">
+      <div class="sticky top-0 h-[100vh] overflow-auto no-scrollbar">
+      <div class="search p-3 sticky top-0 bg-black">
         <input type="text" class="w-2/3 rounded-full bg-[#16181c] text-white py-2 px-4" placeholder="Search">
       </div>
       <div class="whats m-3 pb-2 space-y-3 bg-[#16181c] rounded-xl w-2/3">
@@ -278,13 +337,35 @@
       <div class="who m-3 pb-2 space-y-3 bg-[#16181c] rounded-xl w-2/3">
         <h1 class="text-xl font-bold p-3">Who To Follow</h1>
 
-        <div class="item px-4 p-3 space-y-2 cursor-pointer">
-          <div class="font-bold text-sm cursor-pointer">Aamir Khan</div>
-          <div class="font-bold text-sm cursor-pointer">Shah Rukh Khan</div>
-          <div class="font-bold text-sm cursor-pointer">Salman Khan</div>
+        <div class="item w-full px-4 p-3 space-y-2 cursor-pointer flex justify-between items-center  hover:bg-gray-800">
+          <div class="p1 flex gap-2">
+            <img class="rounded-full w-9" src="https://pbs.twimg.com/profile_images/1740745576675987456/YXD3HkC7_normal.jpg" alt="">
+            <div class="p2 text-[13px]">
+            <div class="font-bold">Aman</div>
+            <div class="text-gray-600">@AmanSharma_554</div>
+          </div>
+          </div>
+          
+          <div class="p3 text-sm">
+            <button class="bg-white text-black px-3 py-1 rounded-2xl">Follow</button>
+          </div>
         </div>
 
-        <div class="text-blue-500 font-bold text-sm px-4 p-3 cursor-pointer">Show More</div>
+        <div class="item w-full px-4 p-3 space-y-2 cursor-pointer flex gap-2 justify-between items-center  hover:bg-gray-800">
+          <div class="p1 flex gap-2">
+            <img class="rounded-full w-9" src="https://pbs.twimg.com/profile_images/1925482455244709890/-SSWc5sG_normal.jpg" alt="">
+          <div class="p2 text-[13px]">
+            <div class="font-bold">Neeraj</div>
+            <div class="text-gray-600">@Neerajscript</div>
+          </div>
+          </div>
+          
+          <div class="p3 text-sm">
+            <button class="bg-white text-black px-3 py-1 rounded-2xl self-end">Follow</button>
+          </div>
+        </div>
+
+        <div class="text-blue-500 font-bold text-sm px-4 p-3 cursor-pointer hover:underline">Show More</div>
       </div>
     </div>
     </div>
