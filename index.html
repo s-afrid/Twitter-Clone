@@ -13,12 +13,15 @@
   </head>
   <body class=" bg-black text-white">
     <div class="flex container mx-auto my-4">
-      <div class="first w-full">
-        <div class="logo invert my-4 ml-14">
+      <div class="first w-full flex flex-col items-end">
+        <div class="sidebar flex">
+          <ul class="flex flex-col text-xl font-bold space-y-2 w-full">
+            <li>
+            <div class="logo invert my-4">
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
-            class="w-8 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"
+            class="w-8 mx-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"
           >
             <g>
               <path
@@ -26,9 +29,9 @@
               ></path>
             </g>
           </svg>
-        </div>
-        <div class="sidebar flex justify-end">
-          <ul class="flex flex-col text-xl font-bold space-y-2 w-1/2">
+        </div>  
+        </li>
+
             <li class="flex justify-start items-center gap-3 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-4xl hover:cursor-pointer"><span class="text-3xl material-symbols-outlined"> home </span>
                 Home</li>
             <li class="flex justify-start items-center gap-3 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-4xl hover:cursor-pointer"><span class="text-3xl material-symbols-outlined"> search </span>
@@ -49,8 +52,15 @@
                 Profile</li>
             <li class="flex justify-start items-center gap-3 w-fit px-4 py-2 hover:bg-gray-900 hover:rounded-4xl hover:cursor-pointer"><span class="text-3xl material-symbols-outlined"> more </span>
                 More</li>
+
+            <li>
+              <div class="button my-4 self-center mx-5">
+            <button class="w-full text-sm bg-white text-black px-10 py-2 rounded-full">Post</button>
+          </div>
+            </li>
           </ul>
         </div>
+        
       </div>
       <div class="second border-[1px] border-x-gray-700 border-y-black w-full">
         <div class="top flex justify-center p-3 z-10 relative">
