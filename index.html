@@ -11,10 +11,10 @@
 </head>
 
 <body class=" bg-black text-white">
-  <div class="flex xl:container mx-auto my-4">
-    <div class="first xl:w-full flex flex-col items-end">
-      <div class="sidebar flex sticky top-0 h-[100vh] overflow-auto no-scrollbar">
-        <ul class="flex flex-col text-xl font-bold space-y-2 w-full xl:p-2">
+  <div class="flex container xl:mx-auto w-[100vw]">
+    <div class="first w-16 xl:w-full flex flex-col items-end">
+      <div class="sidebar flex flex-col sticky top-0 h-[100vh] overflow-auto no-scrollbar">
+        <ul class="flex justify-between flex-col text-xl font-bold space-y-2 w-full xl:p-2">
           <li>
             <div class="logo invert my-4 mx-3">
               <svg viewBox="0 0 24 24" aria-hidden="true"
@@ -82,12 +82,22 @@
             </div>
           </li>
         </ul>
+        <div class="userprofile w-full my-3 mx-3 xl:px-6 xl:py-2 rounded-full hover:bg-gray-900 hidden xl:block">
+          <div class="p1 flex gap-2">
+            <img class="rounded-full w-10 xl:w-9" src="https://pbs.twimg.com/profile_images/1959772033358970880/SwhuFD5V_normal.jpg" alt="">
+          <div class="p2 text-[13px]">
+            <div class="font-bold">Syed Afrid</div>
+            <div class="text-gray-600">@syedafrid</div>
+          </div>
+          </div>
+          
+        </div>
       </div>
 
     </div>
-    <div class="second border-[1px] border-x-gray-700 border-y-black w-full xl:w-full">
-      <div class="top flex justify-center z-10 relative">
-        <div class="absolute w-8 rounded-full h-1 bg-blue-500 bottom-0 left-[20%]"></div>
+    <div class="second flex flex-col flex-wrap border-[1px] border-x-gray-700 border-y-black xl:w-full">
+      <div class="top flex justify-center sticky top-0 backdrop-blur-3xl opacity-80">
+        <div class="absolute w-8 rounded-full h-1 bg-blue-500 bottom-0 left-[20%] z-10"></div>
         <div class="left py-3 w-1/2 text-center font-bold text-md hover:bg-gray-900 cursor-pointer">
           For You
         </div>
@@ -112,6 +122,7 @@
             <span>Everyone can reply</span>
           </div>
           <div class="w-full h-[1px] bg-gray-400"></div>
+          <div class="flex justify-between items-center">
           <div class="blueicons flex gap-2 text-blue-400">
             <span class="!text-[17px] material-symbols-outlined cursor-pointer hover:text-blue-950">image</span>
             <span class="!text-[17px] material-symbols-outlined cursor-pointer hover:text-blue-950">gif_box</span>
@@ -121,20 +132,26 @@
               class="!text-[17px] material-symbols-outlined cursor-pointer hover:text-blue-950">calendar_clock</span>
             <span class="!text-[17px] material-symbols-outlined cursor-pointer hover:text-blue-950">location_on</span>
           </div>
+          <div class="button my-2 self-center mx-2">
+              <button class="cursor-pointer w-full text-sm bg-blue-500 text-white px-4 py-3 xl:px-4 xl:py-2 rounded-full">
+                <span class="text-sm font-bold">Post</span>
+              </button>
+            </div>
+        </div>
         </div>
       </div>
       <div class="w-full h-[1px] bg-gray-700"></div>
 
       <div class="posts">
 
-        <div class="post">
-          <div class="header flex m-3 gap-2 flex-row">
+        <div class="post flex flex-wrap">
+          <div class="header flex m-3 gap-2 flex-row ">
             <div class="image">
-              <img class="w-16 rounded-full"
+              <img class="w-7 xl:w-10 rounded-full"
                 src="https://pbs.twimg.com/profile_images/1923456890786414593/7GNiT2Hn_normal.jpg">
             </div>
 
-            <div class="content">
+            <div class="content flex flex-row flex-wrap w-[90%]">
               <span class="font-bold cursor-pointer hover:underline">Sam</span>
               <span class="text-gray-500">@samirande_ · 1h</span>
               <div>
@@ -168,6 +185,62 @@
                 bar_chart_4_bars
               </span>
               1.4k
+            </div>
+
+            <div class="bookmark_share text-sm flex gap-1 items-center p-3">
+              <span class="!text-[17px] material-symbols-outlined p-2 hover:text-blue-500 hover:bg-[#0e0922] rounded-full">
+                bookmark
+              </span>
+              <span class="!text-[17px] material-symbols-outlined p-2 hover:text-blue-500 hover:bg-[#0e0922] rounded-full">
+                ios_share
+              </span>
+            </div>
+
+          </div>
+            </div>
+          </div>
+
+         <div class="w-full h-[1px] bg-gray-700"></div>
+        </div>
+
+         <div class="post flex flex-wrap">
+          <div class="header flex m-3 gap-2 flex-row ">
+            <div class="image">
+              <img class="w-7 xl:w-10 rounded-full"
+                src="https://pbs.twimg.com/profile_images/1955289353443299328/YWqsfujL_normal.jpg">
+            </div>
+
+            <div class="content flex flex-row flex-wrap w-[90%]">
+              <span class="font-bold cursor-pointer hover:underline">mithali</span>
+              <span class="text-gray-500">@kayleecodez · 6h</span>
+              <div class="m-2">
+                POV you applied to 200 jobs got 3 interviews and they all asked you to code "trapping rain water" problem.
+              </div>
+             
+
+              <div class="icons flex h-2 mb-3 justify-between text-gray-500">
+            <div class="comments text-sm flex gap-1 items-center hover:text-blue-500 hover:bg-[#0e0922] rounded-full p-3">
+              <span class="!text-[15px] material-symbols-outlined">
+                chat_bubble
+              </span>
+              20
+            </div>
+            <div class="retweets text-sm flex gap-1 items-center p-3 hover:text-green-500 hover:bg-[#092213] rounded-full">
+              <span class="!text-[17px] material-symbols-outlined">
+                repeat
+              </span>
+            </div>
+            <div class="likes text-sm flex gap-1 items-center p-3 hover:text-red-500 hover:bg-[#22090b] rounded-full">
+              <span class="!text-[17px] material-symbols-outlined">
+                favorite
+              </span>
+              102
+            </div>
+            <div class="views text-sm flex gap-1 items-center p-3 hover:text-blue-500 hover:bg-[#0e0922] rounded-full ">
+              <span class="!text-[17px] material-symbols-outlined">
+                bar_chart_4_bars
+              </span>
+              2.1k
             </div>
 
             <div class="bookmark_share text-sm flex gap-1 items-center p-3">
@@ -186,123 +259,6 @@
          <div class="w-full h-[1px] bg-gray-700"></div>
         </div>
         
-   <div class="post">
-          <div class="header flex m-3 gap-2 flex-row">
-            <div class="image">
-              <img class="w-16 rounded-full"
-                src="https://pbs.twimg.com/profile_images/1923456890786414593/7GNiT2Hn_normal.jpg">
-            </div>
-
-            <div class="content">
-              <span class="font-bold cursor-pointer hover:underline">Sam</span>
-              <span class="text-gray-500">@samirande_ · 1h</span>
-              <div>
-                Wo sab to thik hai but why the thumbnail is kinda...
-              </div>
-              <div class="posting my-2">
-                <img class="rounded-xl border border-gray-700"
-                  src="https://pbs.twimg.com/media/G1WpsL8XQAAVjKm?format=jpg&name=small" alt="">
-              </div>
-
-              <div class="icons flex h-2 mb-3 justify-between text-gray-500">
-            <div class="comments text-sm flex gap-1 items-center hover:text-blue-500 hover:bg-[#0e0922] rounded-full p-3">
-              <span class="!text-[15px] material-symbols-outlined">
-                chat_bubble
-              </span>
-              15
-            </div>
-            <div class="retweets text-sm flex gap-1 items-center p-3 hover:text-green-500 hover:bg-[#092213] rounded-full">
-              <span class="!text-[17px] material-symbols-outlined">
-                repeat
-              </span>
-            </div>
-            <div class="likes text-sm flex gap-1 items-center p-3 hover:text-red-500 hover:bg-[#22090b] rounded-full">
-              <span class="!text-[17px] material-symbols-outlined">
-                favorite
-              </span>
-              52
-            </div>
-            <div class="views text-sm flex gap-1 items-center p-3 hover:text-blue-500 hover:bg-[#0e0922] rounded-full ">
-              <span class="!text-[17px] material-symbols-outlined">
-                bar_chart_4_bars
-              </span>
-              1.4k
-            </div>
-
-            <div class="bookmark_share text-sm flex gap-1 items-center p-3">
-              <span class="!text-[17px] material-symbols-outlined p-2 hover:text-blue-500 hover:bg-[#0e0922] rounded-full">
-                bookmark
-              </span>
-              <span class="!text-[17px] material-symbols-outlined p-2 hover:text-blue-500 hover:bg-[#0e0922] rounded-full">
-                ios_share
-              </span>
-            </div>
-
-          </div>
-            </div>
-          </div>
-
-         <div class="w-full h-[1px] bg-gray-700"></div>
-        </div>
-
-           <div class="post">
-          <div class="header flex m-3 gap-2 flex-row">
-            <div class="image">
-              <img class="w-16 rounded-full"
-                src="https://pbs.twimg.com/profile_images/1923456890786414593/7GNiT2Hn_normal.jpg">
-            </div>
-
-            <div class="content">
-              <span class="font-bold cursor-pointer hover:underline">Sam</span>
-              <span class="text-gray-500">@samirande_ · 1h</span>
-              <div>
-                Wo sab to thik hai but why the thumbnail is kinda...
-              </div>
-              <div class="posting my-2">
-                <img class="rounded-xl border border-gray-700"
-                  src="https://pbs.twimg.com/media/G1WpsL8XQAAVjKm?format=jpg&name=small" alt="">
-              </div>
-
-              <div class="icons flex h-2 mb-3 justify-between text-gray-500">
-            <div class="comments text-sm flex gap-1 items-center hover:text-blue-500 hover:bg-[#0e0922] rounded-full p-3">
-              <span class="!text-[15px] material-symbols-outlined">
-                chat_bubble
-              </span>
-              15
-            </div>
-            <div class="retweets text-sm flex gap-1 items-center p-3 hover:text-green-500 hover:bg-[#092213] rounded-full">
-              <span class="!text-[17px] material-symbols-outlined">
-                repeat
-              </span>
-            </div>
-            <div class="likes text-sm flex gap-1 items-center p-3 hover:text-red-500 hover:bg-[#22090b] rounded-full">
-              <span class="!text-[17px] material-symbols-outlined">
-                favorite
-              </span>
-              52
-            </div>
-            <div class="views text-sm flex gap-1 items-center p-3 hover:text-blue-500 hover:bg-[#0e0922] rounded-full ">
-              <span class="!text-[17px] material-symbols-outlined">
-                bar_chart_4_bars
-              </span>
-              1.4k
-            </div>
-
-            <div class="bookmark_share text-sm flex gap-1 items-center p-3">
-              <span class="!text-[17px] material-symbols-outlined p-2 hover:text-blue-500 hover:bg-[#0e0922] rounded-full">
-                bookmark
-              </span>
-              <span class="!text-[17px] material-symbols-outlined p-2 hover:text-blue-500 hover:bg-[#0e0922] rounded-full">
-                ios_share
-              </span>
-            </div>
-
-          </div>
-            </div>
-          </div>
-
-         <div class="w-full h-[1px] bg-gray-700"></div>
-        </div>
       </div>
 
     </div>
@@ -366,6 +322,18 @@
         </div>
 
         <div class="text-blue-500 font-bold text-sm px-4 p-3 cursor-pointer hover:underline">Show More</div>
+      </div>
+
+      <div class="terms m-3 w-2/3 p-2 text-xs text-gray-500">
+        <span class="hover:underline cursor-pointer">Terms of Service &nbsp;</span>
+        <span class="hover:underline cursor-pointer">Privacy Policy &nbsp;</span>
+        <span class="hover:underline cursor-pointer">Cookie Policy &nbsp;</span>
+        <span class="hover:underline cursor-pointer">Accessibility &nbsp;</span>
+  <span class="hover:underline cursor-pointer">Ads info &nbsp;</span>
+
+<span class="hover:underline cursor-pointer">More &nbsp;</span>
+<span class="hover:underline cursor-pointer">© 2025 X Corp.</span>
+
       </div>
     </div>
     </div>
